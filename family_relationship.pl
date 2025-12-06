@@ -1,5 +1,6 @@
-Team: Irtifaur Rahman, Kareem Ahmasani, Mary-Angel Sannapu
+% Team: Irtifaur Rahman, Kareem Ahmasani, Mary-Angel Sannapu
 
+% facts
 male(onrun).
 male(baby).
 male(i).
@@ -117,7 +118,7 @@ married(X,Y) :- spouse(Y,X).
 check(Goal, YesMsg, NoMsg) :-
     (Goal -> write(YesMsg) ; write(NoMsg)), nl.
 
-
+% output
 runIt :-
     check(daughter(redhair, i), 'Is redhair the daughter of i?: Yes', 'Is redhair the daughter of i?: No'),
     check(mother(redhair, i), 'Is redhair the mother of i?: Yes', 'Is redhair the mother of i?: No'),
@@ -130,6 +131,7 @@ runIt :-
     check(grandmother(widow, i), 'Is widow the grandmother of i?: Yes', 'Is widow the grandmother of i?: No'),
     check(grandchild(i, widow), 'Is i the grandchild of widow?: Yes', 'Is i the grandchild of widow?: No'),
     check(grandfather(i, i), 'Is i the grandfather of i: Yes', 'Is i the grandfather of i: No').
+
 
 
 
