@@ -1,3 +1,5 @@
+Team: Irtifaur Rahman, Kareem Ahmasani, Mary-Angel Sannapu
+
 male(onrun).
 male(baby).
 male(i).
@@ -128,6 +130,7 @@ runIt :-
     check(grandmother(widow, i), 'Is widow the grandmother of i?: Yes', 'Is widow the grandmother of i?: No'),
     check(grandchild(i, widow), 'Is i the grandchild of widow?: Yes', 'Is i the grandchild of widow?: No'),
     check(grandfather(i, i), 'Is i the grandfather of i: Yes', 'Is i the grandfather of i: No').
+
 
 
 
